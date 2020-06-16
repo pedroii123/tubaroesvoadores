@@ -1,0 +1,129 @@
+label {
+    /*Para ter certeza que todas as labels tem o mesmo tamanho e estão propriamente alinhadas */
+    display: inline-block;
+    width: 325px;
+    text-align: left;
+}
+
+p{
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	margin-bottom:15px;
+    }
+   
+  .content p:first-child{
+	margin: 0px;
+  }
+   
+  label{
+	
+	color: #292929;
+	position: relative;
+  }
+
+
+body {
+
+	background-color: white;
+}
+.content{
+	width: 1000px;
+	min-height: 560px;    
+	margin: 30px auto;
+	position: center;   
+  }
+
+h1{
+	font-size: 48px;
+	color: #066a75;
+	padding: 2px 0 10px 0;
+	font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	font-weight: bold;
+	text-align: center;
+	padding-bottom: 30px;
+  }	
+
+
+
+
+#cadastro{
+  position: center;
+  top: 0px;
+  width: 75%;   
+  padding: 18px 6% 60px 6%;
+  margin: 0 0 35px 0;
+  background: #f7f7f7;
+  border: 1px solid rgba(147, 184, 189,0.8);
+   
+  -webkit-box-shadow: 5px;
+  border-radius: 5px;
+   
+  -webkit-animation-duration: 0.5s;
+  -webkit-animation-timing-function: ease;
+  -webkit-animation-fill-mode: both;
+ 
+  animation-duration: 0.5s;
+  animation-timing-function: ease;
+  animation-fill-mode: both;
+}
+
+input {
+	outline: none;
+  }
+   
+  /*estilo dos input,  menos o checkbox */
+  input:not([type="checkbox"]){
+	width: 40%;
+	margin-top: 4px;
+	padding: 10px;    
+	border: 1px solid #b2b2b2;
+   
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+   
+	-webkit-box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+	box-shadow: 0px 1px 4px 0px rgba(168, 168, 168, 0.6) inset;
+   
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit */
+  input[type="submit"]{
+	width: 30%!important;
+	cursor: pointer;  
+	background:#F05545;
+	padding: 8px 5px;
+	color: #fff;
+	font-size: 20px;  
+	border: 1px solid #fff;   
+	margin-bottom: 10px;  
+	text-shadow: 0 1px 1px #333;
+   
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+   
+	transition: all 0.2s linear;
+  }
+   
+  /*estilo do botão submit no hover */
+  input[type="submit"]:hover{
+	background: rgb(61, 157, 179);
+  }
+
+  /* Efeito ao clicar no botão ( Ir para Login ) */
+#paracadastro:target ~ .content #cadastro,
+#paralogin:target ~ .content #login{
+  z-index: 2;
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+ 
+  -webkit-animation-delay: .1s;
+  animation-delay: .1s;
+}
+ 
+/* Efeito ao clicar no botão ( Cadastre-se ) */
+#registro:target ~ .content #login,
+#paralogin:target ~ .content #cadastro{
+  -webkit-animation-name: fadeOutLeft;
+  animation-name: fadeOutLeft;
+}
