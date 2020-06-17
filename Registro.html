@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<head>
+  <meta charset="UTF-8" />
+  <title>Formulário de Registro com HTML5 e CSS3</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" type="text/css" href="style2.0.css" />
+</head>
+<body>
+  <div class="container" >
+    <a class="links" id="paracadastro"></a>
+    <a class="links" id="paralogin"></a>
+     
+    <div class="content">      
+     <center>
+        <!--FORMULÁRIO DE CADASTRO-->
+      <div id="cadastro">
+        <form method="post" action=""> 
+          <h1 style="color: black"  >Registro</h1> 
+           
+          <p> 
+            <label for="nome_cad";>Nome</label><br>
+            <input id="nome_cad" name="nome_cad" required="required" type="text" placeholder="Nome" />
+            
+        </p>
+          
+          <p> 
+            <label for="sobrenome_cad">Sobrenome</label><br>
+            <input id="sobrenome_cad" name="sobrenome_cad" required="required" type="text" placeholder="Sobrenome" />
+          </p>
+           
+          <p> 
+            <label for="email_cad">E-mail</label><br>
+            <input id="email_cad" name="email_cad" required="required" type="email" placeholder="exemplo@geta.com"/> 
+          </p>
+           
+          <p> 
+            <label for="senha_cad">Senha</label><br>
+            <input id="senha_cad" name="senha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+            
+          <p> 
+            <label for="rsenha_cad">Repita a Senha</label><br>
+            <input id="rsenha_cad" name="rsenha_cad" required="required" type="password" placeholder="ex. 1234"/>
+          </p>
+           
+          <p> 
+            <input type="submit" value="Registrar"/> 
+          </p>
+           <p class="link">  
+            Já tem uma conta?
+            <a href="Login.html"> Faça Login </a>
+          </p>
+        
+        </form>
+      </div>
+    </center>
+     </div>
+    </div>
+  </div>  
+</body>
+</html>
