@@ -55,7 +55,7 @@ padding-bottom: 30px;
 .login{
 position: center;
 top: 0px;
-width: 75%;   
+width: 90%;   
 padding: 18px 6% 60px 6%;
 margin: 0 0 50px 0;
 background: #f7f7f7;
@@ -75,6 +75,7 @@ animation-fill-mode: both;
 
 input {
 outline: none;
+
 }
  
 /*estilo dos input,  menos o checkbox */
