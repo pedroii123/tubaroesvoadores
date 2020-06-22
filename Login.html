@@ -4,6 +4,7 @@
   <title>Formulário de Login e Registro com HTML5 e CSS3</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
   <link rel="stylesheet" type="text/css" href="Lstyle.css" />
+  
 </head>
 <body>
   <div class="container" >
@@ -14,31 +15,32 @@
       <center>
         <!--FORMULÁRIO DE LOGIN-->
       <div id="login">
-        <form method="post" action=""> 
+        <form method="POST" action="/login"> 
           <h1>Login</h1> 
           <p> 
-            <label for="email_login">E-mail</label><br>
-            <input id="email_login" name="email_login" required="required" type="email" placeholder="ex. exemplo@geta.com"/>
+            <label for="email">E-mail</label><br>
+            <input id="login" name="login" required type="email" placeholder="ex. exemplo@geta.com"/>
           </p>
            
           
           <p> 
-            <label for="senha_login">Senha</label><br>
-            <input id="senha_login" name="senha_login" required="required" type="password" placeholder="ex. senha" /> 
+            <label for="password">Senha</label><br>
+            <input id="password" name="password" required type="password" placeholder="ex. senha" /> 
           </p>
            
           <p> 
-            <input type="submit" value="Entrar" /> 
+            <input type="button"" value="Entrar" onclick="logar()"/> 
           </p>
            
           <p class="link">
             Ainda não tem conta?
-            <a href="Registro.html">Registre-se</a>
+            <a href="/register">Registre-se</a>
           </p>
         </form>
       </div>
     </center>
 </div>
 </div>  
+<script src="main.js"></script>
 </body>
 </html>
